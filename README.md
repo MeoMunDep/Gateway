@@ -13,7 +13,6 @@ Welcome to the bot setup guide! Follow the steps below to install and configure 
 3. [Configuration Files](#configuration-files)
    - [`configs.json`](#1-configsjson)
    - [`datas.txt`](#2-datastxt)
-   - [`wallets.txt`](#3-walletstxt)
    - [`proxies.txt`](#4-proxiestxt)
 4. [Running the Bot](#running-the-bot)
 5. [Contact and Support](#contact-and-support)
@@ -43,7 +42,7 @@ Download Node.js and npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257
    Open your terminal or command prompt, navigate to the folder where the bot files are located, and run:
 
    ```bash
-   npm install --force user-agents axios colors p-limit https-proxy-agent socks-proxy-agent 
+   npm install --force user-agents axios colors p-limit https-proxy-agent socks-proxy-agent web3 ethers
    ```
 
    If you encounter an Execution Policy error on Windows, run:
@@ -92,30 +91,20 @@ This file controls the bot’s behavior. Below is an example configuration:
 
 ### 2. `datas.txt` - 🗂️ User Data
 
-- Fill the data for `datas.txt` file, get data from [here](https://t.me/KeoAirDropFreeNe/257/6879). This file contains user data in the following format:
+- Wallets generator: [Link](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
+- EVM Privatekey.
+- 
 
 ```txt
-query_id.../user...
-query_id.../user...
-query_id.../user...
+privatekey
+privatekey
+privatekey
 ```
 
 _Note: Each row for each account_
 
-### 3. `wallets.txt` - 💼 Wallet Addresses
 
-- Wallets generator: [Link](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
-- Add your wallet addresses in the following format:
-
-```txt
-abc...xyz
-abc...xyz
-abc...xyz
-```
-
-_Note: Wallet updates are currently not supported._
-
-### 4. `proxies.txt` - 🌐 Proxy List (Optional)
+### 3. `proxies.txt` - 🌐 Proxy List (Optional)
 
 If you are using proxies, add them here. Leave the file blank if you are not using proxies. Supported formats:
 
